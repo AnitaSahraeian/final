@@ -1,0 +1,477 @@
+/* General Body Styles */
+body {
+    font-family: 'Open Sans', sans-serif; /* Use Open Sans font */
+    color: #222; /* Dark text color */
+    margin: 0; /* Remove default body margin */
+    line-height: 1.6; /* Improve readability */
+    background-color: white; /* White background */
+}
+
+/* Base Styles for all sections */
+section {
+    padding: 1rem; /* Padding for mobile view */
+    margin-bottom: 1rem; /* Space between sections */
+}
+
+h1, h2, h3 {
+    color: #c78c06; /* Primary accent color for headings */
+    text-align: center; /* Center headings for mobile */
+}
+
+img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto;
+    display: block; /* Remove extra space below images */
+    margin: 0 auto; /* Center images */
+    border-radius: 8px; /* Rounded corners */
+}
+
+button {
+    background-color: #c78c06; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer;
+    font-weight: bold;
+    display: block; /* Make button a block element */
+    margin: 10px auto; /* Center button for mobile */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+button:hover {
+    background-color: #fef6ac; /* Lighter background on hover */
+    color: #222;
+}
+
+/* Header Styles (Mobile First) */
+.header-container {
+    background-color: #222; /* Dark background for header */
+    color: white; /* White text for header */
+    padding: 1rem;
+    text-align: center;
+}
+
+.header-container .logo {
+    display: flex; /* Use flexbox to align logo and text */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.header-container .logo img {
+    width: 50px; /* Adjust logo size */
+    height: 50px;
+    margin-right: 10px;
+}
+
+.header-container h1 {
+    margin: 0;
+    color: white; /* Logo text in white */
+    font-size: 1.8rem;
+}
+
+.main-nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav ul li {
+    margin-bottom: 10px; /* Space between nav items */
+}
+
+.main-nav ul li a {
+    color: white; /* White nav links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+    color: #c78c06; /* Change color on hover */
+}
+
+/* Banner Section */
+.banner-section {
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color: #222; /* Fallback background */
+    display: flex; /* Use flex for content alignment */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px; /* Fixed height for banner for mobile */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.banner-section .banner-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire area */
+    opacity: 0.6; /* Slightly dim the image */
+    z-index: 1;
+}
+
+.banner-section .banner-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+    border-radius: 8px;
+    max-width: 90%;
+}
+
+.banner-section h2 {
+    color: white; /* White heading for banner */
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.banner-section p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* About Us Section */
+.about-us-section {
+    background-color: #fef6ac; /* Light accent background */
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.about-us-section img {
+    margin-top: 1.5rem; /* Space between text and image */
+    max-height: 250px; /* Limit image height on mobile */
+    object-fit: cover;
+}
+
+/* Services Section */
+.services-section {
+    background-color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.services-grid {
+    display: flex; /* Use flexbox for mobile stacking */
+    flex-direction: column;
+    gap: 20px; /* Space between service items */
+}
+
+.service-item {
+    background-color: #fef6ac; /* Light accent background for service items */
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-item img {
+    margin-bottom: 10px;
+}
+
+/* Our Vision Section (Placeholder) */
+.our-vision-section {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.our-vision-section h2 {
+    color: white;
+}
+
+.our-vision-section p {
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+}
+
+/* Our Team Section */
+.team-section {
+    background-color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.team-grid {
+    display: flex; /* Use flexbox for mobile stacking */
+    flex-direction: column;
+    gap: 30px; /* Space between team members */
+}
+
+.team-member {
+    background-color: #fef6ac;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Circular images */
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #c78c06;
+}
+
+/* Contact Us Section */
+.contact-us-section {
+    background-color: #fef6ac;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.contact-grid {
+    display: flex; /* Use flexbox for mobile stacking */
+    flex-direction: column;
+    gap: 30px; /* Space between contact items */
+}
+
+.send-message, .location, .hours {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.send-message form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.send-message input,
+.send-message textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    width: calc(100% - 22px); /* Account for padding and border */
+}
+
+.send-message textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.map-placeholder {
+    width: 100%;
+    height: 200px; /* Fixed height for map placeholder on mobile */
+    object-fit: cover;
+    border: 1px solid #ddd;
+}
+
+/* Footer Styles */
+.footer-container {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.social-links {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #c78c06;
+    color: white;
+    text-decoration: none;
+    border-radius: 50%; /* Circular social icons */
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #fef6ac;
+    color: #222;
+}
+
+/* ------------------------------------------- */
+/* Desktop Styles (Media Query) */
+/* Applies to screens 760px and wider */
+/* ------------------------------------------- */
+
+@media (min-width: 760px) {
+    /* Global desktop container */
+    body {
+        max-width: 1200px; /* Max width for the entire layout */
+        margin: 0 auto; /* Center the layout */
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for desktop view */
+    }
+
+    section {
+        padding: 2rem; /* Increase padding for desktop */
+    }
+
+    h1, h2, h3 {
+        text-align: left; /* Align headings to left for desktop */
+        margin-left: 0; /* Reset margin */
+    }
+
+    /* Header Styles (Desktop) */
+    .header-container {
+        display: grid;
+        grid-template-columns: auto 1fr; /* Logo takes auto width, nav takes remaining */
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    .header-container .logo {
+        justify-content: flex-start; /* Align logo to the left */
+        margin-bottom: 0;
+    }
+
+    .main-nav ul {
+        display: flex; /* Arrange nav items horizontally */
+        justify-content: flex-end; /* Align nav to the right */
+        gap: 20px; /* Space between nav items */
+    }
+
+    .main-nav ul li {
+        margin-bottom: 0; /* Remove vertical margin */
+    }
+
+    /* Banner Section (Desktop) */
+    .banner-section {
+        height: 500px; /* Adjust height for desktop banner */
+    }
+
+    .banner-section .banner-content {
+        text-align: left;
+        max-width: 50%; /* Limit text width */
+        padding: 30px;
+        background-color: rgba(0, 0, 0, 0.6); /* Slightly darker overlay for text */
+        margin-left: -50%; /* Adjust position to overlay more of the image */
+    }
+
+    .banner-section h2 {
+        font-size: 3rem; /* Larger heading */
+    }
+
+    .banner-section p {
+        font-size: 1.1rem;
+    }
+
+    .banner-section .read-more-button {
+        margin: 10px 0; /* Align button to left */
+    }
+
+    /* About Us Section (Desktop) */
+    .about-us-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two columns for text and image */
+        gap: 40px; /* Space between columns */
+        align-items: center;
+        text-align: left;
+    }
+
+    .about-us-section img {
+        margin-top: 0;
+        max-height: 400px; /* Adjust image height */
+    }
+
+    /* Services Section (Desktop) */
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Three columns for services */
+        gap: 30px; /* Space between grid items */
+    }
+
+    .service-item {
+        text-align: left; /* Align service item content to left */
+    }
+
+    .service-item img {
+        margin: 0; /* Remove auto margin */
+    }
+
+    .service-item button {
+        margin: 10px 0; /* Align button to left */
+    }
+
+    /* Our Vision Section (Desktop) */
+    .our-vision-section .vision-content {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    /* Our Team Section (Desktop) */
+    .team-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two columns for team members */
+        gap: 40px;
+    }
+
+    .team-member {
+        display: flex; /* Use flexbox for content inside team member */
+        flex-direction: row;
+        text-align: left; /* Align text to left */
+        padding: 2rem;
+    }
+
+    .team-member img {
+        margin-right: 20px; /* Space between image and text */
+        flex-shrink: 0; /* Prevent image from shrinking */
+    }
+
+    /* Contact Us Section (Desktop) */
+    .contact-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr; /* Message form wider, location/hours smaller */
+        grid-template-areas:
+            "message location"
+            "message hours";
+        gap: 30px;
+        text-align: left;
+    }
+
+    .send-message {
+        grid-area: message;
+    }
+
+    .location {
+        grid-area: location;
+    }
+
+    .hours {
+        grid-area: hours;
+    }
+
+    .map-placeholder {
+        height: 100%; /* Make map placeholder fill available height */
+        min-height: 250px; /* Ensure a minimum height */
+    }
+
+    .send-message button {
+        margin: 10px 0; /* Align button to left */
+    }
+
+    /* Footer Styles (Desktop) */
+    .footer-container {
+        display: flex; /* Use flexbox to arrange footer content */
+        justify-content: space-between; /* Space out content */
+        align-items: center;
+        padding: 1.5rem 2rem;
+    }
+
+    .social-links {
+        margin-top: 0; /* Reset margin */
+    }
+}
